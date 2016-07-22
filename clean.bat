@@ -1,7 +1,7 @@
 @echo OFF
 where make > nul
 if not %ERRORLEVEL% == 0 goto NOMAKE
-make
+make clean
 if not %ERRORLEVEL% == 0 pause
 goto EOF
 :NOMAKE
